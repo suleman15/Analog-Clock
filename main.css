@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.clock {
+    width: 25em;
+    height: 25em;
+    min-width: 25em;
+    min-height: 25em;
+    border: 5px solid #5f5f5f;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock::before{
+    width: 100%;
+    content: '';
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(75deg ,white 50%, rgb(236, 235, 235) 51%) ;
+}
+.num {
+    font-size: 2em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 7px;
+    
+}
+.num::after {
+    width: 3px;
+    height: 7px;
+    background-color: #5f5f5f;
+    content: '';
+    position: absolute;
+    top: 0;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.num1 {
+    transform: rotate(30deg);
+}
+.num1 > div {
+    transform: rotate(-30deg);
+}
+
+.num2 {
+    transform: rotate(60deg);
+}
+.num2 > div {
+    transform: rotate(-60deg);
+}
+
+.num3 {
+    transform: rotate(90deg);
+}
+.num3 > div {
+    transform: rotate(-90deg);
+}
+
+.num4 {
+    transform: rotate(120deg);
+}
+.num4 > div {
+    transform: rotate(-120deg);
+}
+
+.num5 {
+    transform: rotate(150deg);
+}
+.num5 > div {
+    transform: rotate(-150deg);
+}
+
+.num6 {
+    transform: rotate(180deg);
+}
+.num6 > div {
+    transform: rotate(-180deg);
+}
+.num7 {
+    transform: rotate(210deg);
+}
+.num7 > div {
+    transform: rotate(-210deg);
+}
+.num8 {
+    transform: rotate(240deg);
+}
+.num8 > div {
+    transform: rotate(-240deg);
+}
+.num9 {
+    transform: rotate(270deg);
+}
+.num9 > div {
+    transform: rotate(-270deg);
+}
+.num10 {
+    transform: rotate(300deg);
+}
+.num10 > div {
+    transform: rotate(-300deg);
+}
+.num11 {
+    transform: rotate(330deg);
+}
+.num11 > div {
+    transform: rotate(-330deg);
+}
+
+
+
+.hour, .min, .sec, .head {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hour > .hr {
+    width: 7px;
+    height: 50px;
+    background-color: #5f5f5f;
+    border-radius: 50px;
+}
+.hour {
+    transform: rotate(45deg);
+}
+.min > .mn {
+    border-radius: 50px;
+    width: 5px;
+    height: 70px;
+    background-color: #5f5f5f;
+}
+.sec > .sc {
+    width: 3px;
+    height: 90px;
+    background-color: red;
+}
+.head {
+    border-radius: 50%;
+    background-color: #5f5f5f;
+    border: 3px solid white;
+    width: 20px;
+    height: 20px;
+}
